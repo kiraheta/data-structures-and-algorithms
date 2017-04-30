@@ -40,3 +40,8 @@ class Node:
         Sets next in Node
         """
         self.next = next
+
+# test Node
+test = Node('hello')
+print(test.get_item())
+print(test.get_next())
