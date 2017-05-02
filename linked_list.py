@@ -41,6 +41,28 @@ class Node:
         """
         self.next = next
 
+class LinkedList:
+    """ Implementation of LinkedList"""
+
+    def __init__(self,head=None):
+        """
+        Inits head with empty item
+        """
+        self.head = head
+
+    def insert(self,item):
+        """
+        Insert item in node
+        """
+        new_node = Node(item)
+        new_node.set_next(self.head)
+        self.head = new_node
+
+    def delete(self,item):
+        """
+        Deletes item in node
+        """
+
 # test Node
 test = Node('hello')
 print(test.get_item())
