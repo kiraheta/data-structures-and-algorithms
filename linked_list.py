@@ -78,7 +78,7 @@ class LinkedList:
                 prev = curr
                 curr = curr.get_next()
         if curr is None:
-            return "Item not in list"
+            raise ValueError("Item not in list")
         if prev is None:
             self.head = curr.get_next()
         else:
@@ -96,8 +96,10 @@ class LinkedList:
             else:
                 curr = curr.get_next()
         if curr is None:
-            return "Item not in list"
-        return curr
+             print("Item not in list")
+        return found
+        # return curr
+        # return found
 
     def size(self):
         """
@@ -111,6 +113,18 @@ class LinkedList:
         return count
 
 # test Node
-test = Node('hello')
-print(test.get_item())
-print(test.get_next())
+# test = Node('hello')
+# print(test.get_item())
+# print(test.get_next())
+
+# test LinkedList
+linked_list = LinkedList()
+print(linked_list.is_empty())
+linked_list.insert(10)
+print(linked_list.size())
+print(linked_list.is_empty())
+print(linked_list.search(9))
+print(linked_list.search(10))
+linked_list.delete(10)
+print(linked_list.size())
+print(linked_list.is_empty())
