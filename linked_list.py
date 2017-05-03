@@ -4,7 +4,7 @@
  Singly Linked List implementation
 
  @Author: Kenny Iraheta
- @Date: 2017-04-29
+ @Date: 2017-05-03
 """
 
 class Node:
@@ -50,6 +50,12 @@ class LinkedList:
         """
         self.head = head
 
+    def is_empty(self):
+        """
+        Returns True if LinkedList is empty
+        """
+        return self.head == None
+
     def insert(self,item):
         """
         Insert item in node
@@ -62,6 +68,47 @@ class LinkedList:
         """
         Deletes item in node
         """
+        curr = self.head
+        prev = None
+        found = False
+        while curr and found is False:
+            if curr.get_item() == item:
+                found = True
+            else:
+                prev = curr
+                curr = curr.get_next()
+        if curr is None:
+            return "Item not in list"
+        if prev is None:
+            self.head = curr.get_next()
+        else:
+            prev.set_next(curr.get_next())
+
+    def search(self,item):
+        """
+        Searches item in LinkedList
+        """
+        curr = self.head
+        found = False
+        while curr and found is False:
+            if curr.get_item() == item:
+                found = True
+            else:
+                curr = curr.get_next()
+        if curr is None:
+            return "Item not in list"
+        return curr
+
+    def size(self):
+        """
+        Returns length of LinkedList
+        """
+        curr = self.head
+        count = 0
+        while curr:
+            count += 1
+            curr = curr.get_next()
+        return count
 
 # test Node
 test = Node('hello')
