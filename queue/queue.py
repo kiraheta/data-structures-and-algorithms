@@ -45,12 +45,13 @@ class Queue:
         return len(self.queue)
 
 # queue example
-queue = Queue() # pylint: disable=locally-disabled, invalid-name
-print(queue.size())
-print(queue.is_empty())
-queue.enqueue('carrots')
-queue.enqueue('hummus')
-print(queue.is_empty())
-print(queue.size())
-print(queue.dequeue())
-print(queue.size())
+if __name__ == '__main__':
+    queue = Queue() # pylint: disable=locally-disabled, invalid-name
+    print(queue.size())
+    print(queue.is_empty())
+    queue.enqueue('carrots')
+    queue.enqueue('hummus')
+    print(queue.is_empty())
+    print(queue.size())
+    print(queue.dequeue())
+    print(queue.size())
