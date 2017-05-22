@@ -117,14 +117,15 @@ class LinkedList:
 # print(test.get_item())
 # print(test.get_next())
 
-# test LinkedList
-linked_list = LinkedList()
-print(linked_list.is_empty())
-linked_list.insert(10)
-print(linked_list.size())
-print(linked_list.is_empty())
-print(linked_list.search(9))
-print(linked_list.search(10))
-linked_list.delete(10)
-print(linked_list.size())
-print(linked_list.is_empty())
+if __name__ == '__main__':
+    # test LinkedList
+    linked_list = LinkedList() # pylint: disable=locally-disabled, invalid-name
+    print(linked_list.is_empty())
+    linked_list.insert(10)
+    print(linked_list.size())
+    print(linked_list.is_empty())
+    print(linked_list.search(9))
+    print(linked_list.search(10))
+    linked_list.delete(10)
+    print(linked_list.size())
+    print(linked_list.is_empty())
