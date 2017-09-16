@@ -22,14 +22,14 @@ by means of an index.
 ###### Time Complexity
 
 | Average | | | |
-| :---: | | :---: | | :---: | | :---: |
+| :---: | :---: | :---: | :---: |
 | Access | Search | Insertion | Deletion |
-|O (1) | O (n) | O (n) | O (n) |
+| O (1) | O (n) | O (n)| O (n) |
 
 | Worst | | | |
-| :---: | | :---: | | :---: | | :---: |
+| :---: | :---: | :---: | :---: |
 | Access | Search | Insertion | Deletion |
-| O (1) | O (n) | O (n) | O (n) |
+| O (1) | O (n) | O (n)| O (n) |
 
 ###### Space Complexity
 
