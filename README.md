@@ -21,13 +21,13 @@ by means of an index.
 
 ###### Time Complexity
 
-| Average |
-| :---: |
+| Average | | | |
+| :---: | | :---: | | :---: | | :---: |
 | Access | Search | Insertion | Deletion |
 |O (1) | O (n) | O (n) | O (n) |
 
-| Worst |
-| :---: |
+| Worst | | | |
+| :---: | | :---: | | :---: | | :---: |
 | Access | Search | Insertion | Deletion |
 | O (1) | O (n) | O (n) | O (n) |
 
