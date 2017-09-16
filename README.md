@@ -1,6 +1,14 @@
-# data-structures-and-algorithms
+# Data Structures and Algorithms
 
-Python & C++ implementation of Data Structures and Algorithms
+Python & C++ implementation of the following Data Structures and Algorithms:
 
-* [stack](https://github.com/kiraheta/data-structures-and-algorithms/tree/master/stack)
-* [queue](https://github.com/kiraheta/data-structures-and-algorithms/tree/master/queue)
+
+| Data Structures |
+| ------------- |
+| Array |
+| Stack |
+| Queue |
+| Hash Table |
+| Linked Lists |
+| Tree |
+| Graphs |
