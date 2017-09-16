@@ -36,3 +36,27 @@ by means of an index.
 |Worst|
 | :---: |
 | O (n)|
+
+#### Implementation
+
+One Dimensional Array
+
+``` C++
+// initialize a 10 element array.
+int array [10];
+```
+
+Two Dimensional Array
+
+``` C++
+// an array with 4 rows and 2 columns.
+int array[4][2] = { {0,1}, {1,3}, {3,4}, {4,6};
+
+// output each array element's value                      
+   for ( int i = 0; i < 4; i++ )
+      for ( int j = 0; j < 2; j++ ) {
+
+         cout << "a[" << i << "][" << j << "]: ";
+         cout << a[i][j]<< endl;
+      }
+```
