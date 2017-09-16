@@ -21,15 +21,15 @@ by means of an index.
 
 ###### Time Complexity
 
-|Average|
-| :---: | :---: |
-| Access | Search | Insertion| Deletion|
-|O (1)| O (n)| O (n)| O (n)|
+| Average |
+| :---: |
+| Access | Search | Insertion | Deletion |
+|O (1) | O (n) | O (n) | O (n) |
 
-|Worst|
-| :---: | :---: |
-| Access | Search | Insertion| Deletion|
-|O (1)| O (n)| O (n)| O (n)|
+| Worst |
+| :---: |
+| Access | Search | Insertion | Deletion |
+| O (1) | O (n) | O (n) | O (n) |
 
 ###### Space Complexity
 
@@ -55,8 +55,8 @@ int array[4][2] = { {0,1}, {1,3}, {3,4}, {4,6};
 // output each array element's value                      
    for ( int i = 0; i < 4; i++ )
       for ( int j = 0; j < 2; j++ ) {
-
          cout << "a[" << i << "][" << j << "]: ";
          cout << a[i][j]<< endl;
       }
 ```
+---
