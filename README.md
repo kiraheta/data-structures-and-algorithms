@@ -60,3 +60,8 @@ int array[4][2] = { {0,1}, {1,3}, {3,4}, {4,6};
       }
 ```
 ---
+
+## Hash Table
+
+> A data structure that maps keys to values via a hash function
+that computes an index into an array of buckets.
