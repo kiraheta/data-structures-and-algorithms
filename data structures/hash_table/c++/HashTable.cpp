@@ -16,7 +16,7 @@ HashTable::HashTable(){
 }
 
 HashTable::~HashTable() {
-  
+
     item* Ptr;
 
     for(int i = 0; i < TABLE_SIZE; i++){
@@ -62,4 +62,14 @@ void HashTable::printItemsInIndex(int index){
             Ptr = Ptr->next;
         }
     }
+}
+
+int HashTable::hash(std::string key){
+
+    int hash = 0;
+    for (size_t i = 0; i < key.length(); i++){
+        hash += (31 * hash) + (int)key[i]; // Horner's Method
+    }
+
+    return (hash % 0x7fffffff) % TABLE_SIZE;
 }
