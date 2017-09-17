@@ -65,3 +65,23 @@ int array[4][2] = { {0,1}, {1,3}, {3,4}, {4,6};
 
 > A data structure that maps keys to values via a hash function
 that computes an index into an array of buckets.
+
+#### Big O
+
+###### Time Complexity
+
+| Average | | | |
+| :---: | :---: | :---: | :---: |
+| Access | Search | Insertion | Deletion |
+| O (1) | O (1) | O (1)| O (1) |
+
+| Worst | | | |
+| :---: | :---: | :---: | :---: |
+| Access | Search | Insertion | Deletion |
+| O (n) | O (n) | O (n)| O (n) |
+
+###### Space Complexity
+
+|Worst|
+| :---: |
+| O (n)|
