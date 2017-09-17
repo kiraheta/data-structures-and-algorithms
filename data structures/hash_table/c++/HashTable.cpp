@@ -73,3 +73,26 @@ int HashTable::hash(std::string key){
 
     return (hash % 0x7fffffff) % TABLE_SIZE;
 }
+
+void HashTable::addItem(std::string name, std::string drink){
+
+    int index = hash(name);
+
+    if(Hash_Table[index]->name == "empty"){
+        Hash_Table[index]->name = name;
+        Hash_Table[index]->drink = drink;
+    }
+    else {
+        item* Ptr = Hash_Table[index];
+        item* n = new item;
+        n->name = name;
+        n->drink = drink;
+        n->next = NULL;
+
+        while(Ptr->next != NULL){
+            Ptr = Ptr->next;
+        }
+
+        Ptr->next = n;
+    }
+}
