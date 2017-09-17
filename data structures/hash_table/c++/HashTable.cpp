@@ -16,6 +16,7 @@ HashTable::HashTable(){
 }
 
 HashTable::~HashTable() {
+  
     item* Ptr;
 
     for(int i = 0; i < TABLE_SIZE; i++){
@@ -23,6 +24,42 @@ HashTable::~HashTable() {
             Ptr = Hash_Table[i];
             Hash_Table[i] = Hash_Table[i]->next;
             delete Ptr;
+        }
+    }
+}
+
+void HashTable::printTable(){
+
+    int number;
+    for(int i = 0; i < TABLE_SIZE; i++){
+
+        number = numOfItemsInIndex(i);
+        std::cout << "-----------------" << std::endl;
+        std::cout << "Index = " << i << std::endl;
+        std::cout << Hash_Table[i]->name << std::endl;
+        std::cout << Hash_Table[i]->drink << std::endl;
+        std::cout << "# of items = " << number << std::endl;
+        std::cout << "-----------------" << std::endl;
+    }
+}
+
+void HashTable::printItemsInIndex(int index){
+
+    item* Ptr = Hash_Table[index];
+
+    if(Ptr->name == "empty"){
+        std::cout << "Index = " << index << " is empty." << std::endl;
+    }
+    else{
+        std::cout << "Index = " << index << " contains the following items"
+        << std::endl;
+
+        while(Ptr != NULL){
+            std::cout << "-----------------" << std::endl;
+            std::cout << Ptr->name << std::endl;
+            std::cout << Ptr->drink << std::endl;
+            std::cout << "-----------------" << std::endl;
+            Ptr = Ptr->next;
         }
     }
 }
