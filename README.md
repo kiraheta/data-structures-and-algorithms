@@ -124,4 +124,24 @@ that computes an index into an array of buckets.
 
 ## Queue
 
->An abstract data type whose first or recently added item is the first item removed or retrieved. This property is FIFO. Items enter a queue at its back and leave at its front
+>An abstract data type whose first or recently added item is the first item removed or retrieved. This property is FIFO. Items enter a queue at its back and leave at its front.
+
+#### Big O
+
+###### Time Complexity
+
+| Average | | | |
+| :---: | :---: | :---: | :---: |
+| Access | Search | Insertion | Deletion |
+| O (n) | O (n) | O (1)| O (1) |
+
+| Worst   | | | |
+| :---: | :---: | :---: | :---: |
+| Access | Search | Insertion | Deletion |
+| O (n) | O (n) | O (1)| O (1) |
+
+###### Space Complexity
+
+|Worst|
+| :---: |
+| O (n)|
