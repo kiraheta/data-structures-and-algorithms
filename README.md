@@ -101,7 +101,7 @@ that computes an index into an array of buckets.
 | Access | Search | Insertion | Deletion |
 | O (n) | O (n) | O (1)| O (1) |
 
-| Worst | | | |
+| Worst   | | | |
 | :---: | :---: | :---: | :---: |
 | Access | Search | Insertion | Deletion |
 | O (n) | O (n) | O (1)| O (1) |
@@ -111,3 +111,11 @@ that computes an index into an array of buckets.
 |Worst|
 | :---: |
 | O (n)|
+
+#### Stack Methods
+
+| Method | Description |
+| :---: | :---: | :---: |
+|push|Add item onto stack|
+|pop|Removes the most-recently-pushed item from the stack.|
+|peek|Returns the last item pushed onto the stack|
