@@ -115,7 +115,13 @@ that computes an index into an array of buckets.
 #### Stack Methods
 
 | Method | Description |
-| :---: | :---: | :---: |
-|push|Add item onto stack|
-|pop|Removes the most-recently-pushed item from the stack.|
-|peek|Returns the last item pushed onto the stack|
+| :---: | :---: |
+| push |Add item onto stack|
+| pop |Removes the most-recently-pushed item from the stack.|
+| peek |Returns the last item pushed onto the stack|
+
+---
+
+## Queue
+
+>An abstract data type whose first or recently added item is the first item removed or retrieved. This property is FIFO. Items enter a queue at its back and leave at its front
