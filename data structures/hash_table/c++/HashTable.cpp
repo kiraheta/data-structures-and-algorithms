@@ -151,3 +151,23 @@ void HashTable::removeItem(std::string name){
         }
     }
 }
+
+int HashTable::numOfItemsInIndex(int index){
+
+    int count = 0;
+
+    if(Hash_Table[index]->name == "empty"){
+        return count;
+    }
+    else {
+        count++;
+        item* Ptr = Hash_Table[index];
+        while(Ptr->next != NULL){
+
+            count++;
+            Ptr = Ptr->next;
+        }
+    }
+
+    return count;
+}
