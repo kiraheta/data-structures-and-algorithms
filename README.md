@@ -117,7 +117,7 @@ that computes an index into an array of buckets.
 | Method | Description |
 | :---: | :---: |
 | push |Add item onto stack|
-| pop |Removes the most-recently-pushed item from the stack.|
+| pop |Removes the most-recently-pushed item from the stack|
 | peek |Returns the last item pushed onto the stack|
 
 ---
@@ -145,6 +145,13 @@ that computes an index into an array of buckets.
 |Worst|
 | :---: |
 | O (n)|
+
+#### Queue Methods
+
+| Method | Description |
+| :---: | :---: |
+| enqueue |Adds a new item to the rear of the queue|
+| dequeue |Removes the front item from the queue|
 
 ---
 
