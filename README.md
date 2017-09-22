@@ -150,4 +150,18 @@ that computes an index into an array of buckets.
 
 ## Linked List
 
->A linear data structure and a list of elements or nodes comprised of two items: the data and a reference to the next node. The last node has a reference to null. The entry point into a linked list is called the head of the list. It should be noted that head is not a separate node, but the reference to the first node. If the list is empty then the head is a null reference. 
+>A linear data structure and a list of elements or nodes comprised of two items: the data and a reference to the next node. The last node has a reference to null. The entry point into a linked list is called the head of the list. It should be noted that head is not a separate node, but the reference to the first node. If the list is empty then the head is a null reference.
+
+#### Big O
+
+###### Time Complexity
+
+| Average | | | |
+| :---: | :---: | :---: | :---: |
+| Access | Search | Insertion | Deletion |
+| O (n) | O (n) | O (1)| O (1) |
+
+| Worst   | | | |
+| :---: | :---: | :---: | :---: |
+| Access | Search | Insertion | Deletion |
+| O (n) | O (n) | O (1)| O (1) |
