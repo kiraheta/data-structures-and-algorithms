@@ -96,3 +96,58 @@ void HashTable::addItem(std::string name, std::string drink){
         Ptr->next = n;
     }
 }
+
+void HashTable::removeItem(std::string name){
+
+    int index = hash(name);
+
+    item* delPtr;
+    item* P1;
+    item* P2;
+
+    // Case 0: Empty is bucket
+    if(Hash_Table[index]->name == "empty" && Hash_Table[index]->drink == "empty"){
+        std::cout << name << " was not found in hash table." << std::endl;
+    }
+
+    //Case 1: Only 1 item inside bucket and item has matching name
+    else if (Hash_Table[index]->name == name && Hash_Table[index]->next == NULL){
+        Hash_Table[index]->name = "empty";
+        Hash_Table[index]->drink = "empty";
+
+        std::cout << name << " was removed from hash table." << std::endl;
+    }
+
+    //Case 2: Match is located in first item and bucket has more than 1 item
+    else if (Hash_Table[index]->name == name){
+        delPtr = Hash_Table[index];
+        Hash_Table[index] = Hash_Table[index]->next;
+        delete delPtr;
+
+        std::cout << name << " was removed from hash table." << std::endl;
+    }
+
+    //Case 3: Bucket contains multiple items but first item is not a match
+    else{
+        P1 = Hash_Table[index]->next;
+        P2 = Hash_Table[index];
+
+        while(P1 != NULL && P1->name != name){
+            P2 = P1;
+            P1 = P1->next;
+        }
+        // Case 3.1: No match
+        if(P1 == NULL){
+            std::cout << name << " was not found from hash table." << std::endl;
+        }
+        // Case 3.2: Match found
+        else{
+            delPtr = P1;
+            P1 = P1->next;
+            P2->next = P1;
+
+            delete delPtr;
+            std::cout << name << " was removed from hash table." << std::endl;
+        }
+    }
+}
