@@ -172,3 +172,9 @@ that computes an index into an array of buckets.
 | :---: | :---: | :---: | :---: |
 | Access | Search | Insertion | Deletion |
 | O (n) | O (n) | O (1)| O (1) |
+
+---
+
+## Tree
+
+>A tree is a collection of nodes connected by directed (or undirected) edges. A tree is a nonlinear data structure, compared to arrays, linked lists, stacks and queues which are linear data structures. A tree can be empty with no nodes or a tree is a structure consisting of one node called the root and zero or one or more subtrees.
