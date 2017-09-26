@@ -178,3 +178,17 @@ that computes an index into an array of buckets.
 ## Tree
 
 >A tree is a collection of nodes connected by directed (or undirected) edges. A tree is a nonlinear data structure, compared to arrays, linked lists, stacks and queues which are linear data structures. A tree can be empty with no nodes or a tree is a structure consisting of one node called the root and zero or one or more subtrees.
+
+---
+
+## Binary Search Tree
+
+>A BST is a binary tree where nodes are organized in the following way:
+
+> * each node contains one key (data)
+* the keys in the left subtree are less than the key in its parent node: L < P
+* the keys in the right subtree are greater than the key in its parent node: P < R
+* duplicate keys are not allowed
+
+> If tree is empty, then newly inserted node becomes root.
+Next inserted node's key is compared to parent's key. If less, then it will be inserted in left attribute of root. Else, in right attribute of root. If a newly inserted node seeks insertion in an already occupied left or right attribute of root, then it's key is compared to root's key. If less, then it moves down left and it's key is compared to the root's left attribute node's key. Else, it moves down it moves down right and it's key is compared to the root's right attribute node's key
