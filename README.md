@@ -206,3 +206,9 @@ Next inserted node's key is compared to parent's key. If less, then it will be i
 | :---: | :---: | :---: | :---: |
 | Access | Search | Insertion | Deletion |
 | O (n) | O (n) | O (n)| O (n) |
+
+###### Space Complexity
+
+|Worst|
+| :---: |
+| O (n)|
