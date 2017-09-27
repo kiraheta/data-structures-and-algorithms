@@ -218,3 +218,15 @@ Next inserted node's key is compared to parent's key. If less, then it will be i
 |Worst|
 | :---: |
 | O (n)|
+
+---
+
+## Graphs
+
+>A graph is an abstract data type comprised of a set of vertices and another of
+edges. Each edge connects two vertices and may be one-way (directed graph)
+or two-way. Moreover, each edge can be weighted, indicating a cost to go from
+one vertex to another. A path is a sequences of vertices that are connected by
+edges. A cycle is a path that starts and ends on the same vertex. A graph with
+no cycles is called an acyclic graph. A directed graph with no cycles is called
+a directed acyclic graph or a DAG.
