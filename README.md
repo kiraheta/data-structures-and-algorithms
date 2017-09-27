@@ -42,15 +42,15 @@ by means of an index.
 One Dimensional Array
 
 ``` C++
-// initialize a 10 element array.
+// initialize a 10 element array
 int array [10];
 ```
 
 Two Dimensional Array
 
 ``` C++
-// an array with 4 rows and 2 columns.
-int array[4][2] = { {0,1}, {1,3}, {3,4}, {4,6};
+// an array with 4 rows and 2 columns
+int array[4][2] = { {0,1}, {1,3}, {3,4}, {4,6} };
 
 // output each array element's value                      
    for ( int i = 0; i < 4; i++ )
@@ -197,7 +197,7 @@ that computes an index into an array of buckets.
 > * duplicate keys are not allowed
 
 > If tree is empty, then newly inserted node becomes root.
-Next inserted node's key is compared to parent's key. If less, then it will be inserted in left attribute of root. Else, in right attribute of root. If a newly inserted node seeks insertion in an already occupied left or right attribute of root, then it's key is compared to root's key. If less, then it moves down left and it's key is compared to the root's left attribute node's key. Else, it moves down right and it's key is compared to the root's right attribute node's key
+Next inserted node's key is compared to parent's key. If less, then it will be inserted in left child of root. Else, in right child of root. If a newly inserted node seeks insertion in an already occupied left or right child of root, then it's key is compared to root's key. If less, then it moves down left and it's key is compared to the root's left child node's key. Else, it moves down right and it's key is compared to the root's right child node's key
 
 #### Big O
 

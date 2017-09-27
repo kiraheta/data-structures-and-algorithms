@@ -6,7 +6,7 @@ Queue implementation
 from collections import deque
 
 class Queue:
-    """Implementation of Stack"""
+    """Implementation of Queue"""
 
     def __init__(self):
         """Inits Queue with empty double ended queue"""
