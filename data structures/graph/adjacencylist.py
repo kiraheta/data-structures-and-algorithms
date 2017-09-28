@@ -62,3 +62,6 @@ class Graph:
             return self.vertList[n]
         else:
             return None
+
+    def __contains__(self, n):
+        return n in self.vertList
