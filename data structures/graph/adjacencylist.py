@@ -44,3 +44,9 @@ class Vertex:
         as a parameter
         """
         return self.connectedTo[nbr]
+
+class Graph:
+
+    def __init__(self):
+        self.vertList = {}
+        self.numVertices = 0
