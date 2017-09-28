@@ -12,6 +12,11 @@ class Test_Stack(unittest.TestCase):
         s = Stack()
         self.assertEqual(0, s.size())
 
+    def test_push(self):
+        s = Stack()
+        s.push(5)
+        self.assertEqual(1, s.size())
+
 
 if __name__ == '__main__':
     unittest.main()
