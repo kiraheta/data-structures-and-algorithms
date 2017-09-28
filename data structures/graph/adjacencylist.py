@@ -19,3 +19,6 @@ class Vertex:
 
     def getConnections(self):
         return self.connectedTo.keys()
+
+    def getId(self):
+        return self.id
