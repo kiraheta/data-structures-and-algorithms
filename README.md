@@ -230,3 +230,17 @@ one vertex to another. A path is a sequences of vertices that are connected by
 edges. A cycle is a path that starts and ends on the same vertex. A graph with
 no cycles is called an acyclic graph. A directed graph with no cycles is called
 a directed acyclic graph or a DAG.
+
+#### Big O
+
+###### Time Complexity
+
+| Adjacency List | | | | |
+| :---: | :---: | :---: | :---: |
+| Add vertex | Add edge | Remove vertex | Remove edge | Query |
+| O (1) | O (1) | O (V + E)| O (E) |O (V) |
+
+| Adjacency Matrix | | | | |
+| :---: | :---: | :---: | :---: |
+| Add vertex | Add edge | Remove vertex | Remove edge | Query |
+| O (V^2) | O (1) | O (V^2)| O (1) |O(1)|
