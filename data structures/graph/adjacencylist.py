@@ -22,3 +22,6 @@ class Vertex:
 
     def getId(self):
         return self.id
+
+    def getWeight(self, nbr):
+        return self.connectedTo[nbr]
