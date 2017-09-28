@@ -21,6 +21,10 @@ class Test_Stack(unittest.TestCase):
         self.s.push(5)
         self.assertEqual(5, self.s.pop())
 
+    def test_peek(self):
+        self.s.push(2)
+        self.assertEqual(2, self.s.peek())
+
 
 if __name__ == '__main__':
     unittest.main()
