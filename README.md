@@ -236,11 +236,17 @@ a directed acyclic graph or a DAG.
 ###### Time Complexity
 
 | Adjacency List | | | | |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: | :---: |
 | Add vertex | Add edge | Remove vertex | Remove edge | Query |
 | O (1) | O (1) | O (V + E)| O (E) |O (V) |
 
 | Adjacency Matrix | | | | |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: | :---: |
 | Add vertex | Add edge | Remove vertex | Remove edge | Query |
 | O (V^2) | O (1) | O (V^2)| O (1) |O(1)|
+
+###### Space Complexity
+
+|Adjacency List| Adjacency Matrix|
+| :---: | :---: |
+| O (V + E)|O (V^2)|
