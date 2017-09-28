@@ -31,16 +31,16 @@ class Stack:
         """Returns length of Stack"""
         return len(self.stack)
 
-if __name__ == '__main__':
-    # Stack example
-    stack = Stack() # pylint: disable=locally-disabled, invalid-name
+# if __name__ == '__main__':
+#     # Stack example
+#     stack = Stack() # pylint: disable=locally-disabled, invalid-name
 
-    print(stack.is_empty()) # True since empty
-    stack.push('burgers')
-    stack.push('fries')
-    print(stack.peek())
-    print(stack.is_empty()) # False since not empty
-    print(stack.pop())
-    print(stack.size())
-    print(stack.pop())
-    print(stack.is_empty()) # True since empty again
+#     print(stack.is_empty()) # True since empty
+#     stack.push('burgers')
+#     stack.push('fries')
+#     print(stack.peek())
+#     print(stack.is_empty()) # False since not empty
+#     print(stack.pop())
+#     print(stack.size())
+#     print(stack.pop())
+#     print(stack.is_empty()) # True since empty again
