@@ -4,6 +4,7 @@
 Adjacency List Implementation
 """
 
+
 class Vertex:
 
     def __init__(self, key):
@@ -13,7 +14,7 @@ class Vertex:
         self.id = key
         self.connectedTo = {}
 
-    def addNeighbor(self, nbr, weight = 0):
+    def addNeighbor(self, nbr, weight=0):
         """
         Adds a connection between two vertices
         """
@@ -45,6 +46,7 @@ class Vertex:
         """
         return self.connectedTo[nbr]
 
+
 class Graph:
 
     def __init__(self):
@@ -65,3 +67,10 @@ class Graph:
 
     def __contains__(self, n):
         return n in self.vertList
+
+    def addEdge(self, f, t, cost=0):
+        if f not in self.vertList:
+            nv = self.addVertex(f)
+        if t not in self.vertList:
+            nv = self.addVertex(t)
+        self.vertList[f].addNeighbor(self.vertList[t], cost)
