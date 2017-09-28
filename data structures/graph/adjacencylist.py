@@ -56,3 +56,9 @@ class Graph:
         newVertex = Vertex(key)
         self.vertList[key] = newVertex
         return newVertex
+
+    def getVertex(self, n):
+        if n in self.vertList:
+            return self.vertList[n]
+        else:
+            return None
