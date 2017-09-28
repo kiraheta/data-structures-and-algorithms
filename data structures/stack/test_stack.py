@@ -4,23 +4,22 @@ import unittest
 
 class Test_Stack(unittest.TestCase):
 
+    def setUp(self):
+        self.s = Stack()
+
     def test_init(self):
-        s = Stack()
-        self.assertEqual(0, s.size())
+        self.assertEqual(0, self.s.size())
 
     def test_is_empty(self):
-        s = Stack()
-        self.assertEqual(0, s.size())
+        self.assertEqual(0, self.s.size())
 
     def test_push(self):
-        s = Stack()
-        s.push(5)
-        self.assertEqual(1, s.size())
+        self.s.push(5)
+        self.assertEqual(1, self.s.size())
 
     def test_pop(self):
-        s = Stack()
-        s.push(5)
-        self.assertEqual(5, s.pop())
+        self.s.push(5)
+        self.assertEqual(5, self.s.pop())
 
 
 if __name__ == '__main__':
