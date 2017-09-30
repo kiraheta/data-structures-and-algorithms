@@ -1,4 +1,5 @@
 from queue import Queue
+from collections import deque
 import unittest
 
 
