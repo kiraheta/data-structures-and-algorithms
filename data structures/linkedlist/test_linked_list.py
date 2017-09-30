@@ -3,7 +3,9 @@ import unittest
 
 
 class Test_LinkedList():
-    pass
+
+    def setUp(self):
+        self.l = LinkedList()
 
 
 if __name__ == '__main__':
