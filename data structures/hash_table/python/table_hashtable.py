@@ -10,6 +10,10 @@ class Test_HashTable(unittest.TestCase):
     def test_init(self):
         self.assertEqual(11, self.h.size)
 
+    def test_put(self):
+        self.h[22] = "cat"
+        self.assertEqual("cat", self.h[22])
+
 
 if __name__ == '__main__':
     unittest.main()
