@@ -17,6 +17,9 @@ class Test_HashTable(unittest.TestCase):
     def test_hashfunction(self):
         self.assertEqual(1, self.h.hashfunction(78, 11))
 
+    def test_rehash(self):
+        self.assertEqual(2, self.h.rehash(self.h.hashfunction(78, 11), 11))
+
 
 if __name__ == '__main__':
     unittest.main()
