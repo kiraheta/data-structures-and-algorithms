@@ -3,7 +3,9 @@ import unittest
 
 
 class Test_BinarySearchTree():
-    pass
+
+    def setUp(self):
+        self.b = BinarySearchTree()
 
 
 if __name__ == '__main__':
