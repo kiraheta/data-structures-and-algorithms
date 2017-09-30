@@ -26,6 +26,10 @@ class Test_LinkedList(unittest.TestCase):
         self.l.insert(88)
         self.assertEqual(True, self.l.search(88))
 
+    def test_size(self):
+        self.l.insert(33)
+        self.assertEqual(1, self.l.size())
+
 
 if __name__ == '__main__':
     unittest.main()
