@@ -3,4 +3,6 @@ import unittest
 
 
 class Test_Queue(unittest.TestCase):
-    pass
+
+    def setUp(self):
+        self.q = Queue()
