@@ -11,6 +11,9 @@ class Test_Queue(unittest.TestCase):
     def test_init(self):
         self.assertEqual(0, self.q.size())
 
+    def test_is_empty(self):
+        self.assertEqual(0, self.q.size())
+
 
 if __name__ == '__main__':
     unittest.main()
