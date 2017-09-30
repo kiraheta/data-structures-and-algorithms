@@ -1,5 +1,4 @@
 from queue import Queue
-from collections import deque
 import unittest
 
 
@@ -26,6 +25,11 @@ class Test_Queue(unittest.TestCase):
         self.q.enqueue(2)
         self.q.enqueue(3)
         self.assertEqual(2, self.q.peek())
+
+    def test_size(self):
+        self.q.enqueue(1)
+        self.q.enqueue(3)
+        self.assertEqual(2, self.q.size())
 
 
 if __name__ == '__main__':
