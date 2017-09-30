@@ -22,6 +22,11 @@ class Test_Queue(unittest.TestCase):
         self.q.enqueue(9)
         self.assertEqual(9, self.q.dequeue())
 
+    def test_peek(self):
+        self.q.enqueue(2)
+        self.q.enqueue(3)
+        self.assertEqual(2, self.q.peek())
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -24,6 +24,10 @@ class Queue:
         """Pops first item from Queue"""
         return self.items.pop()
 
+    def peek(self):
+        """Returns first item from Queue"""
+        return self.items[-1]
+
     def size(self):
         """Returns length of Queue"""
         return len(self.items)
