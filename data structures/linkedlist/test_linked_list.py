@@ -10,6 +10,9 @@ class Test_LinkedList(unittest.TestCase):
     def test_init(self):
         self.assertEqual(0, self.l.size())
 
+    def test_is_empty(self):
+        self.assertEqual(0, self.l.size())
+
 
 if __name__ == '__main__':
     unittest.main()
