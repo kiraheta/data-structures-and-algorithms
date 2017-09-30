@@ -17,6 +17,15 @@ class Test_LinkedList(unittest.TestCase):
         self.l.insert(5)
         self.assertEqual(1, self.l.size())
 
+    def test_delete(self):
+        self.l.insert(4)
+        self.l.delete(4)
+        self.assertEqual(0, self.l.size())
+
+    def test_search(self):
+        self.l.insert(88)
+        self.assertEqual(True, self.l.search(88))
+
 
 if __name__ == '__main__':
     unittest.main()
