@@ -14,6 +14,9 @@ class Test_Graph(unittest.TestCase):
         self.g.addVertex(22)
         self.assertEqual(1, self.g.numVertices)
 
+    def test_getVertex(self):
+        self.assertEqual(None, self.g.getVertex(22))
+
 
 if __name__ == '__main__':
     unittest.main()
