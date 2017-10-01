@@ -24,8 +24,8 @@ class Vertex:
         """
         Returns ids of connected vertices
         """
-        return str(self.id) + ' connectedTo: ' +
-        str([x.id for x in self.connectedTo])
+        return str(self.id) + ' connectedTo: ' + \
+            str([x.id for x in self.connectedTo])
 
     def getConnections(self):
         """
