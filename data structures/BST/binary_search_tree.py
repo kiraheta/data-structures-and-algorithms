@@ -67,7 +67,7 @@ class BinarySearchTree:
     def __iter__(self):
         return self.root.__iter__()
 
-    def put(self, key, value):
+    def put(self, key, val):
         """
         Checks to if tree already has a root. If none, then will create a new 
         TreeNode and insert it as root. If root exists, then calls private, 
