@@ -17,6 +17,10 @@ class Test_BinarySearchTree(unittest.TestCase):
         self.b.put(55, "cat")
         self.assertEqual(1, self.b.size)
 
+    def test_get(self):
+        self.b[33] = "cat"
+        self.assertEqual("cat", self.b.get(33))
+
 
 if __name__ == '__main__':
     unittest.main()
