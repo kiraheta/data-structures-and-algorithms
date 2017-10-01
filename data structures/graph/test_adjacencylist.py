@@ -27,6 +27,10 @@ class Test_Graph(unittest.TestCase):
                 weight = v.getWeight(w)
         self.assertEqual(5, weight)
 
+    def test_getVertices(self):
+        self.g.addVertex(10)
+        self.assertEqual(1, len(self.g.getVertices()))
+
 
 if __name__ == '__main__':
     unittest.main()
