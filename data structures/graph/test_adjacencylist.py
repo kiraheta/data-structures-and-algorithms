@@ -17,6 +17,16 @@ class Test_Graph(unittest.TestCase):
     def test_getVertex(self):
         self.assertEqual(None, self.g.getVertex(22))
 
+    def test_addEdge(self):
+        self.g.addVertex(10)
+        self.g.addVertex(20)
+        self.g.addVertex(30)
+        self.g.addEdge(10, 30, 5)
+        for v in self.g:
+            for w in v.getConnections():
+                weight = v.getWeight(w)
+        self.assertEqual(5, weight)
+
 
 if __name__ == '__main__':
     unittest.main()
