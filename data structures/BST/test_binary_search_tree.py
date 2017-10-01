@@ -21,6 +21,11 @@ class Test_BinarySearchTree(unittest.TestCase):
         self.b[33] = "cat"
         self.assertEqual("cat", self.b.get(33))
 
+    def test_delete(self):
+        self.b[22] = "dog"
+        self.b.delete(22)
+        self.assertEqual(0, self.b.size)
+
 
 if __name__ == '__main__':
     unittest.main()
