@@ -8,6 +8,9 @@ class Test_BinarySearchTree(unittest.TestCase):
         self.b = BinarySearchTree()
 
     def test_init(self):
+        self.assertEqual(None, self.b.root)
+
+    def test_length(self):
         self.assertEqual(0, self.b.size)
 
 
