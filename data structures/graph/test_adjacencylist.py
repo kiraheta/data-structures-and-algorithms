@@ -3,7 +3,9 @@ import unittest
 
 
 class Test_Graph(unittest.TestCase):
-    pass
+
+    def setUp(self):
+        self.g = Graph()
 
 
 if __name__ == '__main__':
