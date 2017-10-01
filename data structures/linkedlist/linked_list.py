@@ -4,76 +4,78 @@
 Singly Linked List implementation
 """
 
+
 class Node:
     """Implementation of Node"""
 
-    def __init__(self, item=None, next=None):
-        """Inits Node with empty item and next"""
-        self.item = item
+    def __init__(self, data=None, next=None):
+        """Inits Node with empty data and next"""
+        self.data = data
         self.next = next
 
-    def get_item(self):
-        """Returns item from Node"""
-        return self.item
+    def get_data(self):
+        """Returns data from Node"""
+        return self.data
 
     def get_next(self):
         """Returns next from Node"""
         return self.next
 
-    def set_item(self, item):
-        """Sets item in Node"""
-        self.item = item
+    def set_data(self, data):
+        """Sets data in Node"""
+        self.data = data
 
-    def set_next(self,next):
+    def set_next(self, next):
         """Sets next in Node"""
         self.next = next
+
 
 class LinkedList:
     """Implementation of LinkedList"""
 
-    def __init__(self,head=None):
-        """Inits head with empty item"""
+    def __init__(self, head=None):
+        """Inits head with empty data"""
         self.head = head
 
     def is_empty(self):
         """Returns True if LinkedList is empty"""
         return self.head == None
 
-    def insert(self,item):
-        """Insert item in node"""
-        new_node = Node(item)
+    def insert(self, data):
+        """Insert data in node"""
+        new_node = Node(data)
         new_node.set_next(self.head)
         self.head = new_node
 
-    def delete(self,item):
-        """Deletes item in node"""
+    def delete(self, data):
+        """Deletes data in node"""
         curr = self.head
         prev = None
         found = False
         while curr and found is False:
-            if curr.get_item() == item:
+            if curr.get_data() == data:
                 found = True
             else:
                 prev = curr
                 curr = curr.get_next()
         if curr is None:
-            raise ValueError("Item not in list")
+            raise ValueError("data not in list")
         if prev is None:
             self.head = curr.get_next()
         else:
             prev.set_next(curr.get_next())
 
-    def search(self,item):
-        """Searches item in LinkedList"""
+    def search(self, data):
+        """Searches data in LinkedList"""
         curr = self.head
         found = False
         while curr and found is False:
-            if curr.get_item() == item:
+            if curr.get_data() == data:
                 found = True
             else:
                 curr = curr.get_next()
         if curr is None:
-             print("Item not in list")
+            print("data not in list")
         return found
 
     def size(self):
