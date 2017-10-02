@@ -52,14 +52,12 @@ class LinkedList:
         curr = self.head
         prev = None
         found = False
-        while curr and found is False:
+        while found is False:
             if curr.get_data() == data:
                 found = True
             else:
                 prev = curr
                 curr = curr.get_next()
-        if curr is None:
-            raise ValueError("data not in list")
         if prev is None:
             self.head = curr.get_next()
         else:
@@ -86,21 +84,3 @@ class LinkedList:
             count += 1
             curr = curr.get_next()
         return count
-
-# test Node
-# test = Node('hello')
-# print(test.get_item())
-# print(test.get_next())
-
-# if __name__ == '__main__':
-#     # test LinkedList
-#     linked_list = LinkedList() # pylint: disable=locally-disabled, invalid-name
-#     print(linked_list.is_empty())
-#     linked_list.insert(10)
-#     print(linked_list.size())
-#     print(linked_list.is_empty())
-#     print(linked_list.search(9))
-#     print(linked_list.search(10))
-#     linked_list.delete(10)
-#     print(linked_list.size())
-#     print(linked_list.is_empty())
