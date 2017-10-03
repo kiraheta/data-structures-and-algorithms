@@ -20,7 +20,7 @@ class Vertex:
         """
         self.connectedTo[nbr] = weight
 
-    def __self__(self):
+    def __str__(self):
         """
         Returns ids of connected vertices
         """
