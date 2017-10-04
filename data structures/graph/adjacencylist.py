@@ -12,26 +12,26 @@ class Vertex:
         Constructor initializes the id and the connectedTo dictionary
         """
         self.id = key
-        self.connectedTo = {}
+        self.edges = {}
 
     def addNeighbor(self, nbr, weight=0):
         """
         Adds a connection between two vertices
         """
-        self.connectedTo[nbr] = weight
+        self.edges[nbr] = weight
 
     def __str__(self):
         """
         Returns ids of connected vertices
         """
-        return str(self.id) + ' connectedTo: ' + \
-            str([x.id for x in self.connectedTo])
+        return str(self.id) + ' edges: ' + \
+            str([x.id for x in self.edges])
 
     def getConnections(self):
         """
         Returns all of the vertices in the adjacency list
         """
-        return self.connectedTo.keys()
+        return self.edges.keys()
 
     def getId(self):
         """
@@ -44,7 +44,7 @@ class Vertex:
         Returns the weight of the edge from this vertex to the vertex passed
         as a parameter
         """
-        return self.connectedTo[nbr]
+        return self.edges[nbr]
 
 
 class Graph:
