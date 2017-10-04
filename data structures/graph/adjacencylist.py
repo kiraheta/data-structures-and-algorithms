@@ -15,8 +15,8 @@ class Vertex:
         self.edges = {}
 
     def is_empty(self):
-        """ 
-        Returns True if edges is empty 
+        """
+        Returns True if edges is empty
         """
         return self.edges == {}
 
@@ -56,28 +56,28 @@ class Vertex:
 class Graph:
 
     def __init__(self):
-        """ 
-        Constructor iniatializes dictionary vertList that maps vertex names to 
+        """
+        Constructor iniatializes dictionary vertList that maps vertex names to
         vertex objects and numVertices to keep track of num of vertices in graph
         """
         self.vertList = {}
         self.numVertices = 0
 
     def is_empty(self):
-        """ 
-        Returns True if numVertices is empty 
+        """
+        Returns True if numVertices is empty
         """
         return self.numVertices == 0
 
     def edges_is_empty(self):
-        """ 
-        Returns True if edges is empty 
+        """
+        Returns True if edges is empty
         """
         for v in self:
             return v.is_empty() == True
 
     def addVertex(self, key):
-        """ 
+        """
         Adds a vertex to vertList
         """
         self.numVertices += 1
@@ -86,7 +86,7 @@ class Graph:
         return newVertex
 
     def getVertex(self, n):
-        """ 
+        """
         Returns vertex if found
         """
         if n in self.vertList:
@@ -95,7 +95,7 @@ class Graph:
             return None
 
     def __contains__(self, n):
-        """ 
+        """
         Returns n if its in vertList
         """
         return n in self.vertList
@@ -111,13 +111,27 @@ class Graph:
         self.vertList[f].addNeighbor(self.vertList[t], cost)
 
     def getVertices(self):
-        """ 
+        """
         Returns the names of all of the vertices in graph
         """
         return self.vertList.keys()
 
     def __iter__(self):
-        """ 
+        """
         Iterates over all the vertex objects in graph
         """
         return iter(self.vertList.values())
+
+    def getVerticesAndWeights(self):
+        """
+        Prints the connected vertices and their weight in graph
+        """
+        if self.is_empty():
+            print("No vertices in graph.")
+        if self.edges_is_empty():
+            print("No edges in graph.")
+        for vertex in self:
+            for vertexes in vertex.getConnections():
+                print('({}, {}) => {}'.format(vertex.getId(),
+                                              vertexes.getId(),
+                                              vertex.getWeight(vertexes)))
