@@ -57,6 +57,12 @@ class Graph:
         self.vertList = {}
         self.numVertices = 0
 
+    def is_empty(self):
+        """ 
+        Returns True if numVertices is empty 
+        """
+        return self.numVertices == 0
+
     def addVertex(self, key):
         """ 
         Adds a vertex to vertList
@@ -99,6 +105,6 @@ class Graph:
 
     def __iter__(self):
         """ 
-        Iterates over all the vertex objects in graph object
+        Iterates over all the vertex objects in graph
         """
         return iter(self.vertList.values())
