@@ -9,10 +9,16 @@ class Vertex:
 
     def __init__(self, key):
         """
-        Constructor initializes the id and the connectedTo dictionary
+        Constructor initializes the id and the edges dictionary
         """
         self.id = key
         self.edges = {}
+
+    def is_empty(self):
+        """ 
+        Returns True if edges is empty 
+        """
+        return self.edges == {}
 
     def addNeighbor(self, nbr, weight=0):
         """
@@ -24,7 +30,7 @@ class Vertex:
         """
         Returns ids of connected vertices
         """
-        return str(self.id) + ' edges: ' + \
+        return str(self.id) + ' connectedTo: ' + \
             str([x.id for x in self.edges])
 
     def getConnections(self):
