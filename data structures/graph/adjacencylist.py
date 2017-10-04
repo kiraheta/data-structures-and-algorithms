@@ -69,6 +69,13 @@ class Graph:
         """
         return self.numVertices == 0
 
+    def edges_is_empty(self):
+        """ 
+        Returns True if edges is empty 
+        """
+        for v in self:
+            return v.is_empty() == True
+
     def addVertex(self, key):
         """ 
         Adds a vertex to vertList
