@@ -87,7 +87,7 @@ that computes an index into an array of buckets.
 | O (n)|
 
 #### Implementation
-[hashtable.py](blob/master/data structures/hash_table/python/hashtable.py)
+[hashtable.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/data%20structures/hash_table/python/hashtable.py)
 
 ---
 
@@ -122,6 +122,9 @@ that computes an index into an array of buckets.
 | push |Add item onto stack|
 | pop |Removes the most-recently-pushed item from the stack|
 | peek |Returns the last item pushed onto the stack|
+
+#### Implementation
+[stack.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/data%20structures/stack/stack.py)
 
 ---
 
