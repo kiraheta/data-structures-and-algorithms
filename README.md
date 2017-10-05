@@ -159,6 +159,9 @@ that computes an index into an array of buckets.
 | enqueue |Adds a new item to the rear of the queue|
 | dequeue |Removes the front item from the queue|
 
+#### Implementation
+[queue.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/data%20structures/queue/queue.py)
+
 ---
 
 ## Linked List
