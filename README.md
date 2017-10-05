@@ -250,3 +250,10 @@ a directed acyclic graph or a DAG.
 |Adjacency List| Adjacency Matrix|
 | :---: | :---: |
 | O (V + E)|O (V^2)|
+
+---
+
+### References
+
+http://interactivepython.org/runestone/static/pythonds/index.html
+https://en.wikibooks.org/wiki/Data_Structures
