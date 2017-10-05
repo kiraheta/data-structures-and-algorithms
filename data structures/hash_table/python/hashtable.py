@@ -44,7 +44,6 @@ class HashTable():
 
     def get(self, key):
         startbucket = self.hashfunction(key, len(self.buckets))
-
         data = None
         stop = False
         found = False

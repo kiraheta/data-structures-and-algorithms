@@ -86,6 +86,9 @@ that computes an index into an array of buckets.
 | :---: |
 | O (n)|
 
+#### Implementation
+[hashtable.py](blob/master/data structures/hash_table/python/hashtable.py)
+
 ---
 
 ## Stack
@@ -256,4 +259,5 @@ a directed acyclic graph or a DAG.
 ### References
 
 http://interactivepython.org/runestone/static/pythonds/index.html
+
 https://en.wikibooks.org/wiki/Data_Structures
