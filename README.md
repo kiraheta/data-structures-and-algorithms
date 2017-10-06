@@ -1,6 +1,6 @@
 # Data Structures and Algorithms
 
-Python & C++ implementation of the following Data Structures and Algorithms:
+Python implementation of the following Data Structures and Algorithms:
 
 
 | | Data Structures | |
