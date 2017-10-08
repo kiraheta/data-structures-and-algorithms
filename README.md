@@ -165,6 +165,10 @@ that computes an index into an array of buckets.
 #### Implementation
 [queue.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/data%20structures/queue/queue.py)
 
+###### Test Implementation
+[test_queue.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/data%20structures/queue/test_queue.py)
+
+
 ---
 
 ## Linked List
