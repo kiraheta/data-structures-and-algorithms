@@ -196,10 +196,10 @@ that computes an index into an array of buckets.
 | O (n)|
 
 #### Implementation
-[linked_list.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/data%20structures/linkedlist/linked_list.py)
+[test_linked_list.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/data%20structures/linkedlist/linked_list.py)
 
 ###### Test Implementation
-[linked_list.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/data%20structures/linkedlist/linked_list.py)
+[linked_list.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/data%20structures/linkedlist/test_linked_list.py)
 
 ---
 
@@ -243,6 +243,9 @@ Next inserted node's key is compared to parent's key. If less, then it will be i
 
 #### Implementation
 [binary_search_tree.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/data%20structures/BST/binary_search_tree.py)
+
+###### Test Implementation
+[test_binary_search_tree.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/data%20structures/BST/test_binary_search_tree.py)
 
 ---
 
