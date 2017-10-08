@@ -198,6 +198,9 @@ that computes an index into an array of buckets.
 #### Implementation
 [linked_list.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/data%20structures/linkedlist/linked_list.py)
 
+###### Test Implementation
+[linked_list.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/data%20structures/linkedlist/linked_list.py)
+
 ---
 
 ## Tree
