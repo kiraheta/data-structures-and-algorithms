@@ -33,3 +33,10 @@ sublist is the entire input list. The algorithm proceeds by finding the smallest
 (or largest, depending on sorting order) element in the unsorted sublist,
 exchanging (swapping) it with the leftmost unsorted element (putting it in
 sorted order), and moving the sublist boundaries one element to the right.
+
+#### Big O
+
+###### Time & Space Complexity
+| Best | Average | Worst || Worst |
+| :---: | :---: | :---: | :---: | :---: |
+| O (n^2) | O (n^2) | O (n^2)|| O (1) |
