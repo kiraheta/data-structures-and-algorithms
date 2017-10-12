@@ -57,3 +57,5 @@ https://en.wikipedia.org/wiki/Bubble_sort
 | Best | Average | Worst || Worst |
 | :---: | :---: | :---: | :---: | :---: |
 | O (n) | O (n^2) | O (n^2)|| O (1) |
+
+*Animation of [Insertion Sort](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)*
