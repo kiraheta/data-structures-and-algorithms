@@ -22,6 +22,24 @@ https://en.wikipedia.org/wiki/Bubble_sort
 
 ---
 
+## Insertion Sort
+
+>A simple sorting algorithm that builds the final sorted array (or list) one item at a time. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.
+
+#### Big O
+
+###### Time & Space Complexity
+| Best | Average | Worst || Worst |
+| :---: | :---: | :---: | :---: | :---: |
+| O (n) | O (n^2) | O (n^2)|| O (1) |
+
+*Animation of [Insertion Sort](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)*
+
+#### Reference
+https://en.wikipedia.org/wiki/Insertion_sort
+
+---
+
 ## Selection Sort
 
 >A sorting algorithm that divides the input list into two parts: the sublist of
@@ -43,19 +61,4 @@ sorted order), and moving the sublist boundaries one element to the right.
 *Animation of [Selection Sort](https://upload.wikimedia.org/wikipedia/commons/b/b0/Selection_sort_animation.gif)*
 
 #### Reference
-https://en.wikipedia.org/wiki/Bubble_sort
-
----
-
-## Insertion Sort
-
->A simple sorting algorithm that builds the final sorted array (or list) one item at a time. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.
-
-#### Big O
-
-###### Time & Space Complexity
-| Best | Average | Worst || Worst |
-| :---: | :---: | :---: | :---: | :---: |
-| O (n) | O (n^2) | O (n^2)|| O (1) |
-
-*Animation of [Insertion Sort](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)*
+https://en.wikipedia.org/wiki/Selection_sort
