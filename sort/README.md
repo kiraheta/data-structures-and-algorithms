@@ -40,3 +40,5 @@ sorted order), and moving the sublist boundaries one element to the right.
 | Best | Average | Worst || Worst |
 | :---: | :---: | :---: | :---: | :---: |
 | O (n^2) | O (n^2) | O (n^2)|| O (1) |
+
+*Animation of [Selection Sort](https://upload.wikimedia.org/wikipedia/commons/b/b0/Selection_sort_animation.gif)*
