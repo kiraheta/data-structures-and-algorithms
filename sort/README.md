@@ -16,3 +16,7 @@ named for the way smaller or larger elements "bubble" to the top of the list.
 | O (n) | O (n^2) | O (n^2)|| O (1) |
 
 *Animation of [Bubble Sort](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)*
+
+#### Reference
+
+https://en.wikipedia.org/wiki/Bubble_sort
