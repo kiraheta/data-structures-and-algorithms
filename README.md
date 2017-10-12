@@ -1,4 +1,5 @@
 # Data Structures and Algorithms
+![language python](https://img.shields.io/badge/language-python-blue.svg)
 
 Python implementation of the following Data Structures and Algorithms:
 
