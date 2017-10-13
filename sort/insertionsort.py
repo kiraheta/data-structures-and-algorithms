@@ -1,4 +1,4 @@
-#!/bin/usr/pytho
+#!/bin/usr/python
 
 """
 insertionsort implementation
