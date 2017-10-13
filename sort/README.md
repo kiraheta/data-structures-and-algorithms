@@ -1,4 +1,5 @@
 # Sort Algorithms
+![language python](https://img.shields.io/badge/language-python-blue.svg)
 
 ## Bubble Sort
 
