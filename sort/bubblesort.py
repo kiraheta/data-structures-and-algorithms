@@ -15,6 +15,5 @@ def bubblesort(aList):
 if __name__ == '__main__':
 
     aList = [44, 40, 30, 4, 2, 6, 1, 11, 8]
-
     bubblesort(aList)
     print(aList)
