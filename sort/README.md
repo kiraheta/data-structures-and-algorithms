@@ -82,3 +82,5 @@ https://en.wikipedia.org/wiki/Selection_sort
 | Best | Average | Worst || Worst |
 | :---: | :---: | :---: | :---: | :---: |
 | O (n log n) | O (n log n) | O (n log n)|| O (n) |
+
+*Animation of [Merge Sort](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)*
