@@ -84,3 +84,6 @@ https://en.wikipedia.org/wiki/Selection_sort
 | O (n log n) | O (n log n) | O (n log n)|| O (n) |
 
 *Animation of [Merge Sort](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)*
+
+#### Reference
+https://en.wikipedia.org/wiki/Merge_sort
