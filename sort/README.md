@@ -105,3 +105,10 @@ https://en.wikipedia.org/wiki/Merge_sort
 >The base case of the recursion is arrays of size zero or one, which are in order by definition, so they never need to be sorted.
 
 >The pivot selection and partitioning steps can be done in several different ways; the choice of specific implementation schemes greatly affects the algorithm's performance.
+
+#### Big O
+
+###### Time & Space Complexity
+| Best | Average | Worst || Worst |
+| :---: | :---: | :---: | :---: | :---: |
+| O (n log n) | O (n log n) | O (n^2)|| O (n) |
