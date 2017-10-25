@@ -112,3 +112,5 @@ https://en.wikipedia.org/wiki/Merge_sort
 | Best | Average | Worst || Worst |
 | :---: | :---: | :---: | :---: | :---: |
 | O (n log n) | O (n log n) | O (n^2)|| O (n) |
+
+*Animation of [Quick Sort](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)*
