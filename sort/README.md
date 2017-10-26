@@ -67,6 +67,9 @@ sorted order), and moving the sublist boundaries one element to the right.
 
 *Animation of [Selection Sort](https://upload.wikimedia.org/wikipedia/commons/b/b0/Selection_sort_animation.gif)*
 
+#### Implementation
+[selectionsort.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/sort/selectionsort.py)
+
 #### Reference
 https://en.wikipedia.org/wiki/Selection_sort
 
