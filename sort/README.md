@@ -121,5 +121,8 @@ https://en.wikipedia.org/wiki/Merge_sort
 
 *Animation of [Quick Sort](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)*
 
+#### Implementation
+[quicksort.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/sort/quicksort.py)
+
 #### Reference
 https://en.wikipedia.org/wiki/Quicksort
