@@ -88,6 +88,9 @@ https://en.wikipedia.org/wiki/Selection_sort
 
 *Animation of [Merge Sort](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)*
 
+#### Implementation
+[mergesort.py](https://github.com/kiraheta/data-structures-and-algorithms/blob/master/sort/mergesort.py)
+
 #### Reference
 https://en.wikipedia.org/wiki/Merge_sort
 
